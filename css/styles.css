@@ -516,3 +516,13 @@ fill: var(--accent-txt-cl);
     padding-top: 96px;
     padding-bottom: 120px;
 }
+
+/* modal window */
+
+.backdrop {}
+
+.modal {}
+
+.modal-btn {}
+
+.modal-icon {}
