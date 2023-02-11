@@ -29,12 +29,12 @@
     <header>
       <div class="container container-header">
         <nav class="nav-header">
-          <a class="logo link current" id="link" href="./index.html"
+          <a class="logo link" id="link" href="./index.html"
             >web<span class="logo-header">studio</span></a
           >
           <ul class="list flexbox-container-nav">
             <li>
-              <a href="./index.html" class="nav link">Studio</a>
+              <a href="./index.html" class="nav link current">Studio</a>
             </li>
             <li>
               <a href="./portfolio.html" class="nav link">Portfolio</a>
@@ -68,7 +68,9 @@
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- section 1 -->
@@ -475,9 +477,9 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop">
+    <div class="backdrop" data modal>
       <div class="modal">
-        <button class="modal-btn" type="button">
+        <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="20" height="20">
             <use href="./images/icons.svg#close"></use>
           </svg>
@@ -486,5 +488,6 @@
     </div>
 
     <script src="./js/header.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
