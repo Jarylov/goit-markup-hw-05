@@ -233,10 +233,7 @@ justify-content: center;
 align-items: center;
 }
 
-.advantages {
-    
-    
-}
+
 
 .clause {
     display: flex;
@@ -341,6 +338,8 @@ color: #8E8F99;
 box-sizing: border-box;
 border: 1px solid #8E8F99;
 border-radius: 4px;
+
+transition: transform 250ms;
 }
 
 .icon-logo {
@@ -365,6 +364,31 @@ border: 1px solid #404BBF;
 /* ======================== */
 
 
+.tumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: translateY(100%);
+    transition: transform 250ms;
+    background-color: #4D5AE5;
+}
+
+.text-overlay {
+    padding: 40px 32px;
+    
+    color: var(--light-bg);
+}
+
+
 .flexbox-container-filter {
 display: flex;
 justify-content: space-between;
@@ -384,9 +408,16 @@ row-gap: 48px;
 
 .card-project:hover,
 .card-project:focus {
+    
 width: 360px;
 height: 420px;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.card-project:hover .overlay,
+.card-project:focus .overlay {
+    transform: translateY(0);
+    
 }
 
 
