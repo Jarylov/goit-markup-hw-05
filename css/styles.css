@@ -109,12 +109,14 @@ font-size: 16px;
 line-height: calc(24 / 16);
 color: #2E2F42;
 transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
     margin-left: auto;
     padding-top: 24px;
     transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact {
@@ -207,6 +209,7 @@ line-height: calc(24 / 16);
 letter-spacing: 0.04em;
 color: var(--accent-txt-cl);
 transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -316,6 +319,7 @@ height: 40px;
 background-color: var(--secondary-bg-cl);
 border-radius: 50%;
 transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -347,6 +351,7 @@ border: 1px solid #8E8F99;
 border-radius: 4px;
 
 transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-logo {
@@ -379,6 +384,7 @@ border: 1px solid #404BBF;
     cursor: pointer;
     padding: 12px 24px;
     transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -416,6 +422,7 @@ border: 1px solid #404BBF;
 
     transform: translateY(100%);
     transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #4D5AE5;
 }
 
@@ -565,6 +572,7 @@ display: flex;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon-footer {
