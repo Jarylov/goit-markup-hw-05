@@ -110,6 +110,7 @@ line-height: calc(24 / 16);
 color: #2E2F42;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: color;
 }
 
 .address {
@@ -117,6 +118,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 24px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
 }
 
 .contact {
@@ -210,6 +212,7 @@ letter-spacing: 0.04em;
 color: var(--accent-txt-cl);
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: background-color, box-shadow;
 }
 
 .hero-btn:hover,
@@ -320,6 +323,7 @@ background-color: var(--secondary-bg-cl);
 border-radius: 50%;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: background-color;
 }
 
 
@@ -352,6 +356,7 @@ border-radius: 4px;
 
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: color, border-color;
 }
 
 .icon-logo {
@@ -385,6 +390,7 @@ border: 1px solid #404BBF;
     padding: 12px 24px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color, border-color, box-shadow;
 }
 
 .filter-btn:hover,
@@ -421,14 +427,12 @@ border: 1px solid #404BBF;
     height: 100%;
 
     transform: translateY(100%);
-    transition: transform 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #4D5AE5;
 }
 
 .text-overlay {
     padding: 40px 32px;
-    
     color: var(--light-bg);
 }
 
@@ -573,6 +577,7 @@ display: flex;
     border-radius: 50%;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
 }
 
 .social-icon-footer {
@@ -637,20 +642,29 @@ fill: var(--accent-txt-cl);
 
 .modal-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 24px;
+    right: 24px;
 
     display: flex;
     align-items: center;
     justify-content: center;
     width: 24px;
     height: 24px;
+    fill: var(--primary-txt-cl);
     padding: 0;
     border: none;
     border-radius: 50%;
-    background-color: #D9D9D9;
+    background: #E7E9FC;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: color, background-color, border-color;
 }
 
-.modal-icon {
-    fill: var(--primary-txt-cl);
+.modal-btn:hover,
+.modal-btn:focus {
+    fill: #FFFFFF;
+    background: #404BBF; 
 }
+
